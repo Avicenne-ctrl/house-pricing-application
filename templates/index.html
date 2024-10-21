@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOUSE PRICING PREDICTION</title>
+    <style>
+        body {
+            text-align: center; /* Centre le contenu */
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0; /* Ajoute une couleur de fond légère */
+        }
+        header {
+            background-color: #4CAF50; /* Couleur d'arrière-plan pour le header */
+            padding: 20px 0;
+            text-align: center; /* Centre le titre */
+            color: white;
+            font-size: 24px;
+            border-bottom: 2px solid #ddd;
+        }
+        .container {
+            position: relative;
+            margin-top: 40px; /* Marge supérieure pour espacement */
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ajoute une ombre légère */
+            width: 90%;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        input[type="number"], select {
+            padding: 10px;
+            margin: 10px;
+            width: 100%; /* Prend toute la largeur */
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+            background-color: #f9f9f9;
+        }
+        button[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            margin-top: 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 18px;
+        }
+        button[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        /* Style pour aligner les sélections déroulantes horizontalement */
+        #select-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-gap: 15px; /* Espacement entre les éléments */
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>HOUSE PRICING PREDICTION</h1>
+    </header>
+    <div class="container">
+        <form id="search-form" method="post">
+            <!-- Div pour aligner les sélections déroulantes horizontalement -->
+            <div id="select-container">
+                <input type="number" id="area" name="area" placeholder="Enter area value">
+                <input type="number" id="bedrooms" name="bedrooms" placeholder="Enter bedrooms value">
+                <input type="number" id="bathrooms" name="bathrooms" placeholder="Enter bathrooms value">
+                <input type="number" id="stories" name="stories" placeholder="Enter stories value">
+
+                <select name="mainroad" id="mainroad">
+                    <option value="">Mainroad</option>
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>
+                </select>
+                <select name="guestroom" id="guestroom">
+                    <option value="">Guestroom</option>
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>
+                </select>
+                <select name="basement" id="basement">
+                    <option value="">Basement</option>
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>
+                </select>
+                <select name="hotwaterheating" id="hotwaterheating">
+                    <option value="">Hotwater Heating</option>
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>
+                </select>
+                <select name="airconditioning" id="airconditioning">
+                    <option value="">Air Conditioning</option>
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>
+                </select>
+                <input type="number" id="parking" name="parking" placeholder="Enter parking value">
+                <select name="prefarea" id="prefarea">
+                    <option value="">Preferred Area</option>
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>
+                </select>
+                <select name="furnishingstatus" id="furnishingstatus">
+                    <option value="">Furnishing Status</option>
+                    <option value="0">Furnished</option>
+                    <option value="1">Semi-Furnished</option>
+                    <option value="2">Unfurnished</option>
+                </select>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

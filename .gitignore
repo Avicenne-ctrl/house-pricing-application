@@ -1,0 +1,39 @@
+# pyenv
+.python-version
+
+# Environments and IDEs
+.env
+.env.*
+.venv
+.venv.*
+.idea/
+.vscode/
+*.swp
+
+# macOS files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Logs and databases
+*.log
+*.sql
+*.sqlite
+*.db
+
+# Caches
+*.bak
+*.tmp
+*.lock
+*.mo
+*.pot
+*.pid
+*.gz
+*.old
+
+
+# Anaconda
+anaconda3/
+conda-meta/
+*.conda
+
