@@ -2,6 +2,7 @@
 .python-version
 
 # Environments and IDEs
+env
 .env
 .env.*
 .venv
